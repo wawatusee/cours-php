@@ -1,0 +1,81 @@
+
+/*BODY*/
+body{
+	
+}
+@font-face {
+    font-family: 'quadranta';
+    src:     url('font/quadranta.otf') format('truetype'),
+    url('quadranta.woff') format('woff'),
+    url('quadranta.svg#QuadrantaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TITRES */
+h1{text-align: center;
+    font-family:quadranta, sans-serif;
+	color:darkgrey;
+    font-size:3.5em;
+	}
+h2{margin-left: 20px;
+    padding-left: 20px;
+    width: 50%;
+    font-family:quadranta, sans-serif;
+    font-size:2.5em;
+    background-color: hotpink;
+    color:darkgrey;
+}
+/* STRUCTURES */
+header{
+	
+}
+p {font-family:"verdana",sans-serif;
+    margin-left: 50px;
+    max-width: 50em;
+}
+
+section{
+	
+}
+
+article{
+	
+}
+aside{
+	
+}
+
+/* FOOTER */
+footer{
+	
+}
+/*TABLEAUX*/
+table, th, td, tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table thead{background-color: #033;color: white;}
+table tbody{color: black ;}
+table tfoot{text-align: center;}
+/*DIALOGUES*/
+.question{
+	color:orange;
+}
+.reponse{
+	color: yellow;
+}
+/*INSERT*/
+.code{
+    padding: 20px;
+    margin-left: 50px;
+  background-color: darkgrey;
+  color: white;
+    width: 50%;
+}
+.code p{
+    background-color:darkorange;
+    margin-left: unset;
+    font-style: oblique;
+    display: inline;
+}

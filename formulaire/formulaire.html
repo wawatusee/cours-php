@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+        
+    </head>
+    <body>
+        <h1>Formulaire</h1>
+        <form action="traitement.php" method="get">
+            <fieldset>
+                <legend>Identification.</legend>
+                <label for="nom">Nom : </label><input type="text" name="nom" id="nom" />
+                <input type="text" name="prenom" placeholder="Entrez votre prénom" />
+                <label for="motdepasse">Mot de passe : </label>
+                <input type="password" name="mdp" id="motdepasse" />
+            </fieldset>
+            <br /><br />
+            <!-- 
+                Pour regrouper plusieurs choix de radio-boutons, 
+                ils doivent avoir la même valeur dans l'attribut NAME.
+                Pour les distinguer, ils auront un ID différent.
+                Pour les associer au LABEL, on met un attribut FOR avec l'ID comme valeur
+            -->    
+            <label>Genre : </label>
+            <input type="radio" name="genre" id="homme" value="H"><label for="homme">Homme</label>
+            <input type="radio" name="genre" id="femme" value="F"><label for="femme">Femme</label>
+            <br /><br/>
+            <label>Langues :</label>
+            <input type="checkbox" name="langue" id="FR" value="Français"><label for="FR">Français</label>
+            <input type="checkbox" name="langue" id="NL" value="Nederlands"><label for="NL">Néerlandais</label>
+            <input type="checkbox" name="langue" id="EN" value="English"><label for="EN">Anglais</label>
+            <br /><br/>
+            <!-- Bouton d'action, ici, on ouvre un popup si on clique sur le bouton -->
+            <input type="button" value="Cliquez ici" onclick="alert('Bonjour');">
+            <!-- Champ caché : invisible à l'écran -->
+            <input type="hidden" name="cache">
+            <!-- Bouton image : sert aussi de bouton d'envoi comme SUBMIT -->
+            <br /><br />
+            <input type="image" src="bouton-image.png" alt="Mon bouton">
+            <br /><br />
+            <!-- Bouton de sélection de fichier -->
+            <input type="file" name="nomfichier" />
+            <!--Zone de texte (textArea-->)
+            <br /><br />
+            <label for=""commentaires">Votre message : </label><textarea id="commentaires" >Entrez votre texte ici </textarea>
+            <br>
+            <h2>Liste de choix</h2>
+            Permet de proposer des choix, plusieurs attributs :
+            <ul>
+                <li>size</li>
+                <li>Multiple</li>
+            </ul>
+            <select size="3">
+                <optgroup label="Suède">
+                    <option value="Saab">Saab</option>
+                    <option value="Volvo">Volvo</option>
+                </optgroup>
+                <optgroup label="Allemandes">
+                    <option value="Opel">Opel</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes">Mercedes</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" value="Envoyer le formulaire" />
+        </form>
+    </body>
+</html>
