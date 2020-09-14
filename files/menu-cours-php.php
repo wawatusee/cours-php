@@ -1,7 +1,8 @@
 <?php
+    function createMenu($repertoire){
         $nb_fichier = 0;
-        echo '<ul>Cours base PHP';
-        if ($dossier = @opendir('cours')) {
+        echo '<ul>';
+        if ($dossier = @opendir($repertoire)) {
             while (false !== ($fichier = readdir($dossier))) {
                 if ($fichier != '.' && $fichier != '..' && $fichier != 'index.php') {
                 //Condition qui permet de ne pas afficher index.php, etc
@@ -18,4 +19,9 @@
             closedir($dossier);
         } else
             echo 'Le dossier n\' a pas pu être ouvert';
+    }
+    echo 'Cours base PHP';
+     createMenu("cours");
+    echo 'Exercices PHP';
+    createMenu("Exercices");
     ?>
