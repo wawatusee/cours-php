@@ -8,3 +8,4 @@
  Ne pas utiliser de caractères spéciaux ni d'espace pour les noms de variables
  */
 echo "<a href='https://www.php.net/manual/fr/language.variables.basics.php' target='_blank'>Règles de nommage des variables en PHP</a>";
+?>

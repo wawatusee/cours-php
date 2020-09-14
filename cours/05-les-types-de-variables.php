@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <link href="css/style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Types-de-variables</title>
-</head>
-<body>
-<h1>Les types de variables</h1>
+<h2>Les types de variables</h2>
 <p>Les variables en php sont locales par défaut, elles commencent par le signe $</p>
-<h2>Le boléens</h2>
+<h3>Le boléens</h3>
 <p>2 valeurs possibles : true ou false</p>
 <?php
 //Declaration des variables
@@ -31,7 +20,7 @@ echo '$bool2 a pour valeur d\'affichage :"rien", ppour l\'afficher dans cette li
 echo"<br>";
 echo 'Pour concatèner '.'j\'ajoute des points '.'entre chaque élément que je veux ajouter à une phrase en mélangeant variables et texte ';
 ?>
-<h2>Les variables de type texte-text-string-str</h2>
+<h3>Les variables de type texte-text-string-str</h3>
 <p>Les variables de type string sont très utilisé&es, elles sont également les plus risquées à manipuler.</p>
 <?php
 $text="bonjour";
@@ -59,7 +48,7 @@ echo "La fonction PHP : <i>nl2br</i> permet de récupérer les retour à la lign
 //var dump permet de debugger les variables
 var_dump($bool,$bool2);
 ?>
-<h2>Les variables de type numérique</h2>
+<h3>Les variables de type numérique</h3>
 <p>Les variables de type int permettent de manipuler les chiffres sans virgules, positif et négatifs</p>
 <?php
 $int=0;
@@ -67,7 +56,7 @@ $int2=5;
 $int3=-7;
 var_dump($int3);
 ?>
-<h2>Les variables de type numérique à virgules flottantes</h2>
+<h3>Les variables de type numérique à virgules flottantes</h3>
 <p>Les variables de type float, fonctionent comme les int, attention on utilise les . à la place de la virgule comme limite des décimales.</p>
 <?php
 $float=0.0000012;
@@ -76,7 +65,7 @@ $float2=25.08;
 echo '<pre>'.'var_dump($float,$float1,$float2)'.'va nous afficher : <br>';
 var_dump($float,$float1,$float2);?>
 </pre>
-<h2>Les variables de type Tableaux</h2>
+<h3>Les variables de type Tableaux</h3>
 <p>Les variables de type tableau. les tableaux sont des conteneurs pouvant contenir de multiples éléments.</p>
 <?php
 $array=[$float,$float1,$float2];
@@ -163,5 +152,3 @@ print_r($superArray);
 <?php
 print "J'hésite entre un ".$superArray[0]["titre"]." et une ".$superArray[2]["titre"]." allez! Je vais me taper une ".$superArray[2]["texte"][2];
 ?>
-</body>
-</html>
