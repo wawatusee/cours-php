@@ -4,16 +4,23 @@ body{
 	
 }
 .grid-container{
-    grid-template-areas:
-    'header header header header header header'
-    'menu menu main main main main'
-    'footer footer footer footer footer footer';
+display: grid;
+    grid-template-columns: 1fr repeat(5 1fr);
+    grid-template-rows: 1fr auto auto;
 }
 @font-face {
     font-family:'quadranta';
     src:url('/font/quadranta.otf') format('truetype');
 }
-
+header{
+    grid-column-start: 1 ;
+    grid-column-end: 7;
+}
+nav{
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    background-color: blanchedalmond;
+}
 /* TITRES */
 h1{text-align: center;
     font-family: quadranta,sans-serif;
@@ -29,9 +36,7 @@ h2{margin-left: 20px;
     color:darkgrey;
 }
 /* STRUCTURES */
-.header{
-    grid-area: header;
-}
+
 p {font-family:"verdana",sans-serif;
     margin-left: 50px;
     max-width: 50em;
@@ -52,19 +57,17 @@ aside{
 footer{
 	
 }
-.footer{
-    grid-area: footer; 
-}
-.nav{
-    grid-area: menu;
-}
 nav li a{
-
-    color: grey;
-background-color: #033;
+    color: rgb(179, 197, 187);
+background-color: rgb(202, 131, 64);
 }
-.main{
-    grid-area: main;
+main{
+    grid-column-start: 2 ;
+    grid-column-end: 7;
+}
+footer{
+    grid-column-start: 1 ;
+    grid-column-end: 7;
 }
 /*TABLEAUX*/
 table, th, td, tr {
@@ -95,4 +98,3 @@ table tfoot{text-align: center;}
     font-style: oblique;
     display: inline;
 }
-

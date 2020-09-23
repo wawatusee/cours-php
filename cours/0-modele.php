@@ -1,4 +1,3 @@
-
 <h2>incrémentation</h2>
   <pre class="code">
   Code :

@@ -1,14 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <link href="css/style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
 <h1>Les boucles</h1>
 <H2>La boucle While</H2>
 <p>La boucle while est le moyen le plus simple d'implémenter une bouclze en PHP</p>
@@ -168,5 +157,4 @@ do{
 } while ($lulu<10);
 echo '$lulu vaut :',"$lulu";
 ?>
-</body>
-</html>
+

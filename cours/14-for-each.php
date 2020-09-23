@@ -1,14 +1,3 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>for each</title>
-</head>
-<body>
 <h1>for each</h1>
 <h2>Sur un tableau indexé</h2>
 <p>For each est une façon simple de parcourir des tableaux ou des objets.</p>
@@ -69,5 +58,4 @@ for($i=0;$i<$nb_stagiaire;$i++){
     echo "$i=>$stagiaire[$i]|";
 };
 ?>
-</body>
-</html>
+
